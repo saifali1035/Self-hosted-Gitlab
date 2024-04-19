@@ -54,6 +54,16 @@ else
 fi
 ```
 
+Run like
+```BASH
+sh gitlab-pre-req-check.sh
+```
+<img width="506" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/a481dec9-fe9b-48c7-8e50-1ed2bc258401">
+
+once completed run this to make the profile changes take effect
+```BASH
+source ~/.bash_profile
+```
 
 # 1st Way - Using Docker Compose.
 
