@@ -28,5 +28,20 @@ services:
       - '$GITLAB_HOME/logs:/var/log/gitlab'
       - '$GITLAB_HOME/data:/var/opt/gitlab'
     shm_size: '256m'
-
 ```
+
+We will create one **service** named **gitlab**, with conatiner named gitlab and image as **gitlab/gitlab-ee:latest**.
+```YAML
+version: '3.6'
+services:
+  gitlab:
+    image: gitlab/gitlab-ee:latest
+    container_name: gitlab
+```
+
+We will restart as always so incase the container inside the service goes in error state or exits because of any reason, it will get restrated aleays.
+```YAML
+restart: always
+```
+
+
