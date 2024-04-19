@@ -19,6 +19,11 @@ else
 fi
 ```
 
+Run like
+```BASH
+sh docker-pre-req-check.sh
+```
+
 
 # 1st Way - Using Docker Compose.
 
