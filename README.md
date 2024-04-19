@@ -147,3 +147,8 @@ Set the dedicated memory for the conatiner as 256m.
 shm_size: '256m'
 ```
 
+**Start service with**
+
+```docker
+docker compose up
+```
