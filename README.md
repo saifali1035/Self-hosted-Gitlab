@@ -150,5 +150,26 @@ shm_size: '256m'
 **Start service with**
 
 ```docker
-docker compose up
+docker compose up -d
 ```
+<img width="611" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/e241ed68-3ca3-4bee-acd9-913907de77b5">
+
+
+**Check the running service with**
+```docker
+docker compose ps
+```
+<img width="645" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/1900a22d-ae57-4c51-88e4-d2227143dc58">
+
+
+**Check logs with**
+```docker
+docker compose logs -f gitlab
+```
+
+**After 2-3 minutes you will get a gitlab welcome screen as**
+<img width="827" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/d4e2c82f-a56e-42b0-8820-93beda000f19">
+
+
+
+
