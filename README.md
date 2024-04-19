@@ -44,4 +44,18 @@ We will restart as always so incase the container inside the service goes in err
 restart: always
 ```
 
+Setting up custom **hostname** as **'gitlab.example.com'**
+```YAML
+hostname: 'gitlab.example.com'
+```
+
+Setting up external hostname in main configuration file of gitlab that is **gitlab.rb**
+```YAML
+environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        # Add any other gitlab.rb configuration here, each on its own line
+        external_url 'https://gitlab.example.com'
+```
+
+
 
