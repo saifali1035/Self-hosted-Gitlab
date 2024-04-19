@@ -167,8 +167,19 @@ docker compose ps
 docker compose logs -f gitlab
 ```
 
-**After 2-3 minutes you will get a gitlab welcome screen as**
+**After 2-3 minutes you will get a gitlab welcome screen on https://localhost**
 <img width="827" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/d4e2c82f-a56e-42b0-8820-93beda000f19">
+
+Ininital **username** is **root** and **password** is stored in a file at /etc/gitlab/initial_root_password
+
+Run
+```docker
+docker compose exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
+
+```
+<img width="563" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/67c855ac-a16a-4b38-aeca-a8072108ef45">
+
+
 
 
 
