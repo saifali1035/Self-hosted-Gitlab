@@ -26,6 +26,33 @@ sh docker-pre-req-check.sh
 
 <img width="499" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/583dff1e-ea4f-4f40-bc5f-50c9090cf082">
 
+Then we have another file named **gitlab-pre-req-check.sh** which will set pre-req for gitab as docker-compose service.
+
+```BASH
+#!/bin/bash
+
+#checking and creating dir for gitlab
+home_dir=~/
+new_dir="dir_for_gitlab"
+mkdir -p "$home_dir$new_dir"
+
+if [ $? -eq 0 ]; then
+    echo "Directory $new_dir created sucessfully in $home_dir"
+else
+    echo "Failed to create directory !"
+fi
+
+#setting up the dir in profile
+line_to_add="export GITLAB_HOME=$home_dir$new_dir"
+echo "$line_to_add" >> ~/.bash_profile
+
+if [ $? -eq 0 ]; then
+    echo "Gitlab home path added in profile"
+    echo "Please run 'source ~/.bash_profile' now for the changes to take effect !"
+else
+    echo "Adding Gitlab home path added in profile failed !"
+fi
+```
 
 
 # 1st Way - Using Docker Compose.
