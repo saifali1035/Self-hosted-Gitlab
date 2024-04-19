@@ -64,6 +64,17 @@ Ports that need to be opened are 22,443 and 80 for SSH, HTTP and HTTPs.
       - '443:443'
       - '22:22'
 ```
+We declared our **GITLAB_HOME** earlier using **gitlab-pre-req.sh** file.
+Following volumes need to be set for gitlab to save data and other files.
+**/etc/gitlab** for storing the GitLab **configuration files**.
+**/var/log/gitlab** is where gitlab store **logs**.
+**/var/opt/gitlab**is where gitlab **application data** is stored.
 
+```YAML
+    volumes:
+      - '$GITLAB_HOME/config:/etc/gitlab'
+      - '$GITLAB_HOME/logs:/var/log/gitlab'
+      - '$GITLAB_HOME/data:/var/opt/gitlab'
+```
 
 
