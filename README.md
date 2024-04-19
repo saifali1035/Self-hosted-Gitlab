@@ -24,6 +24,9 @@ Run like
 sh docker-pre-req-check.sh
 ```
 
+<img width="499" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/583dff1e-ea4f-4f40-bc5f-50c9090cf082">
+
+
 
 # 1st Way - Using Docker Compose.
 
