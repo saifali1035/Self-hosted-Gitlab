@@ -24,7 +24,7 @@ Run like
 sh docker-pre-req-check.sh
 ```
 
-<img width="499" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/583dff1e-ea4f-4f40-bc5f-50c9090cf082">
+<img width="827" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/583dff1e-ea4f-4f40-bc5f-50c9090cf082">
 
 Then we have another file named **gitlab-pre-req-check.sh** which will set pre-req for gitab as docker-compose service.
 
@@ -58,7 +58,7 @@ Run like
 ```BASH
 sh gitlab-pre-req-check.sh
 ```
-<img width="506" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/a481dec9-fe9b-48c7-8e50-1ed2bc258401">
+<img width="827" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/a481dec9-fe9b-48c7-8e50-1ed2bc258401">
 
 once completed run this to make the profile changes take effect
 ```BASH
@@ -152,14 +152,14 @@ shm_size: '256m'
 ```docker
 docker compose up -d
 ```
-<img width="611" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/e241ed68-3ca3-4bee-acd9-913907de77b5">
+<img width="827" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/e241ed68-3ca3-4bee-acd9-913907de77b5">
 
 
 **Check the running service with**
 ```docker
 docker compose ps
 ```
-<img width="645" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/1900a22d-ae57-4c51-88e4-d2227143dc58">
+<img width="827" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/1900a22d-ae57-4c51-88e4-d2227143dc58">
 
 
 **Check logs with**
@@ -177,7 +177,7 @@ Run
 docker compose exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
 ```
-<img width="563" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/67c855ac-a16a-4b38-aeca-a8072108ef45">
+<img width="827" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/67c855ac-a16a-4b38-aeca-a8072108ef45">
 
 
 
