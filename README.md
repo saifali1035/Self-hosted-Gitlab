@@ -77,4 +77,9 @@ Following volumes need to be set for gitlab to save data and other files.
       - '$GITLAB_HOME/data:/var/opt/gitlab'
 ```
 
+Set the dedicated memory for the conatiner as 256m.
+
+```YAML
+shm_size: '256m'
+```
 
