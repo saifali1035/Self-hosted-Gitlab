@@ -17,6 +17,7 @@ echo "$line_to_add" >> ~/.bash_profile
 
 if [ $? -eq 0 ]; then
     echo "Gitlab home path added in profile"
+    echo " Please run source ~/.bash_profile now for the changes to take effect !"
 else
     echo " Adding Gitlab home path added in profile failed !"
 fi
