@@ -39,7 +39,7 @@ services:
     container_name: gitlab
 ```
 
-We will restart as always so incase the container inside the service goes in error state or exits because of any reason, it will get restrated aleays.
+We will set restart as always so incase the container inside the service goes in error state or exits because of any reason, it will get restrated aleays.
 ```YAML
 restart: always
 ```
@@ -55,6 +55,14 @@ environment:
       GITLAB_OMNIBUS_CONFIG: |
         # Add any other gitlab.rb configuration here, each on its own line
         external_url 'https://gitlab.example.com'
+```
+
+Ports that need to be opened are 22,443 and 80 for SSH, HTTP and HTTPs.
+```YAML
+    ports:
+      - '80:80'
+      - '443:443'
+      - '22:22'
 ```
 
 
