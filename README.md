@@ -173,13 +173,15 @@ docker compose logs -f gitlab
 Ininital **username** is **root** and **password** is stored in a file at /etc/gitlab/initial_root_password
 
 Run
+
 ```docker
 docker compose exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
 ```
 <img width="827" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/67c855ac-a16a-4b38-aeca-a8072108ef45">
 
-Welcome Screen
+
+**Welcome Screen**
 
 <img width="890" alt="image" src="https://github.com/saifali1035/Self-hosted-Gitlab/assets/37189361/b9520b52-b410-4377-8961-d2a5b6f2d246">
 
